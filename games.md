@@ -1,0 +1,45 @@
+# database name: Games
+# nome tabelle: Game
+- id                        number BIGINT       PRIMARYKEY  AUTO_INCREMENT  
+- key_serial                string VARCHAR(20)  PRIMARYKEY  UNIQUE
+- title                     string TEXT         NULL     
+- original_title            string TEXT         NOTNULL
+- edition                   string TEXT         NULL        DEFAULT(0)
+- gener                     string VARCHAR(15)  NOTNULL
+- description               string TEXT         NOTNULL
+- cover_image               string VARCHAR()    NOTNULL
+- trailer                   string VARCHAR()    NULL
+- gamplay                   string VARCHAR()    NULL
+- platform                  string TEXT         NOTNULL
+- requirements_minimum      string TEXT         NULL
+- requirements_recommended  string TEXT         NULL
+- country_product           string VARCHAR(30)  NULL
+- language                  string TEXT         NOTNULL
+- developer                 string VARCHAR()    NULL
+- editor                    string VARCHAR()    NOTNULL
+- date_creation             string DATE         NULL
+- date_production           string DATE         NOTNULL
+- version                   string VARCHAR(15)  NOTNULL
+- cost                      number INT          NULL
+- price                     number FLOAT(5,2)   NOTNULL
+- disponibility             number TINYINT      NOTNULL
+- quantity                  number INT          NULL        DEFAULT(0)        AUTO_INCREMENT
+- global_rate               number FLOAT(3,2)   NULL
+- global_hours_played       number FLOAT(6,2)   NULL
+- global_players            number INT          NULL
+- web_site                  string VARCHAR()    NULL
+- social                    string VARCHAR()    NULL
+- download                  string VARCHAR()    NULL
+- hours_stimated            number FLOAT(4,1)   NULL
+- tags                      string TEXT         NOTNULL
+- rtx                       number TINYINT      NOTNULL
+- hdr                       number TINYINT      NOTNULL
+- pegi                      number TINYINT      NOTNULL
+- controller_compatibility  number TINYINT      NULL
+- vr                        number TINYINT      NULL
+- single_player             number TINYINT      NULL
+- multiplayer               number TINYINT      NULL
+- free_to_play              number TINYINT      NULL
+- size                      number MEDIUMINT    NULL
+- os_compatibility          string VARCHAR()    NULL
+- game_article              string MEDIUMTEXT   NULL
